@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form JDBC</title>
+</head>
+<body>
+	<form name="form1" action="RegServlet" method="POST">
+		User Name :<input type="text" name="username" /><br> <br>
+		Email :<input type="text" name="email" /><br> Phone No :<input
+			type="text" name="phone" /><br> <input type="hidden"
+			name="hdnbt" /> <br> <input type="Submit" value="Register"
+			name="btnReg"
+			onclick="{
+			document.form1.hdnbt.value=this.value;
+			document.form1.submit();
+		}" />
+		<input type="Submit" value="View" name="btnView"
+			onclick="{
+			document.form1.hdnbt.value=this.value;
+			document.form1.submit();
+		}" />
+
+
+
+	</form>
+</body>
+</html>
